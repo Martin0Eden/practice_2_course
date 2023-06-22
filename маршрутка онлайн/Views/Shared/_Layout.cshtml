@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - маршрутка_онлайн</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <img class="main_cover" src="img/w_3.png" alt="">
+        <ul>
+            <div class="menu_container">
+                <a href="#" class="menu_element">Главная</a>
+            </div>
+            <div class="menu_container">
+                <a href="#" class="menu_element">Такси</a>
+            </div>
+            <div class="menu_container">
+                <a href="#" class="menu_element">Маршрутное Такси</a>
+            </div>
+            <div class="menu_container">
+                <a href="#" class="menu_element">Достопримечательности</a>
+            </div>
+            <div class="menu_container">
+                <a href="#" class="menu_element">Иностранные маршруты</a>
+            </div>
+        </ul>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <h2>Практическое задание</h2>
+        <h3>Студента группы 21ПИ Гаврилова Дмитрия</h3>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

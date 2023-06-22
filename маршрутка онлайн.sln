@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33706.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "маршрутка онлайн", "маршрутка онлайн\маршрутка онлайн.csproj", "{6EEDA13B-20C5-47F5-97FE-ABF12265E8BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EEDA13B-20C5-47F5-97FE-ABF12265E8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EEDA13B-20C5-47F5-97FE-ABF12265E8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EEDA13B-20C5-47F5-97FE-ABF12265E8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EEDA13B-20C5-47F5-97FE-ABF12265E8BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AEBF92C-1A3C-45A8-8C3C-1C12474A257E}
+	EndGlobalSection
+EndGlobal
