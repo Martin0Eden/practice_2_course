@@ -37,12 +37,24 @@
       "PackagePath": "staticwebassets\\img\\w_3.png"
     },
     {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\иностранные_маршруты.jpg",
+      "PackagePath": "staticwebassets\\img\\иностранные_маршруты.jpg"
+    },
+    {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\обложка.jpg",
       "PackagePath": "staticwebassets\\img\\обложка.jpg"
     },
     {
-      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\памятник.jpg",
+      "PackagePath": "staticwebassets\\img\\памятник.jpg"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\такси.jpg",
+      "PackagePath": "staticwebassets\\img\\такси.jpg"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\movement.js",
+      "PackagePath": "staticwebassets\\js\\movement.js"
     },
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\lib\\bootstrap\\LICENSE",

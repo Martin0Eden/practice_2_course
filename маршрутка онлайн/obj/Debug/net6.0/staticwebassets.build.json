@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ArWxtwEpWCc8dpiUuedCwipnZTG8tG2UHmeQQ8/qme4=",
+  "Hash": "xoPbtCrlNPJkUruGtt9eqWUEPoeKF7bSqRtUiXl/f2o=",
   "Source": "маршрутка онлайн",
   "BasePath": "_content/маршрутка онлайн",
   "Mode": "Default",
@@ -187,6 +187,23 @@
       "OriginalItemSpec": "wwwroot\\img\\w_3.png"
     },
     {
+      "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\иностранные_маршруты.jpg",
+      "SourceId": "маршрутка онлайн",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\",
+      "BasePath": "_content/маршрутка онлайн",
+      "RelativePath": "img/иностранные_маршруты.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\иностранные_маршруты.jpg"
+    },
+    {
       "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\обложка.jpg",
       "SourceId": "маршрутка онлайн",
       "SourceType": "Discovered",
@@ -204,12 +221,12 @@
       "OriginalItemSpec": "wwwroot\\img\\обложка.jpg"
     },
     {
-      "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\site.js",
+      "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\памятник.jpg",
       "SourceId": "маршрутка онлайн",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\",
       "BasePath": "_content/маршрутка онлайн",
-      "RelativePath": "js/site.js",
+      "RelativePath": "img/памятник.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,7 +235,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot\\img\\памятник.jpg"
+    },
+    {
+      "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\такси.jpg",
+      "SourceId": "маршрутка онлайн",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\",
+      "BasePath": "_content/маршрутка онлайн",
+      "RelativePath": "img/такси.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\такси.jpg"
+    },
+    {
+      "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\movement.js",
+      "SourceId": "маршрутка онлайн",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\",
+      "BasePath": "_content/маршрутка онлайн",
+      "RelativePath": "js/movement.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\movement.js"
     },
     {
       "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
