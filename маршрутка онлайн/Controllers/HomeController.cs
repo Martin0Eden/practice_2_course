@@ -18,7 +18,22 @@ namespace маршрутка_онлайн.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Taxi()
+        {
+            return View();
+        }
+
+        public IActionResult foreign_taxi()
+        {
+            return View();
+        }
+        
+        public IActionResult cart()
+        {
+            return View();
+        }
+
+        public IActionResult attractions()
         {
             return View();
         }
