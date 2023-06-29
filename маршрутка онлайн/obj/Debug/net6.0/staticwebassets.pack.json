@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\css\\taxi.css",
+      "PackagePath": "staticwebassets\\css\\taxi.css"
+    },
+    {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\fonts\\FontsFree-Net-Jeko-Extra-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\FontsFree-Net-Jeko-Extra-Bold.ttf"
     },
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\1024473.jpg",
@@ -57,12 +65,48 @@
       "PackagePath": "staticwebassets\\img\\памятник_карт.png"
     },
     {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\сети\\free-icon-instagram-1384089.png",
+      "PackagePath": "staticwebassets\\img\\сети\\free-icon-instagram-1384089.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\сети\\free-icon-social-48971.png",
+      "PackagePath": "staticwebassets\\img\\сети\\free-icon-social-48971.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\сети\\free-icon-telegram-3800059.png",
+      "PackagePath": "staticwebassets\\img\\сети\\free-icon-telegram-3800059.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\сети\\free-icon-viber-1236868.png",
+      "PackagePath": "staticwebassets\\img\\сети\\free-icon-viber-1236868.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\сети\\free-icon-vk-152813.png",
+      "PackagePath": "staticwebassets\\img\\сети\\free-icon-vk-152813.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\сети\\free-icon-whatsapp-1384023.png",
+      "PackagePath": "staticwebassets\\img\\сети\\free-icon-whatsapp-1384023.png"
+    },
+    {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\такси.jpg",
       "PackagePath": "staticwebassets\\img\\такси.jpg"
     },
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\такси_карт.png",
       "PackagePath": "staticwebassets\\img\\такси_карт.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\такси_комета.png",
+      "PackagePath": "staticwebassets\\img\\такси_комета.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\такси_мечта.png",
+      "PackagePath": "staticwebassets\\img\\такси_мечта.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\такси_такса.png",
+      "PackagePath": "staticwebassets\\img\\такси_такса.png"
     },
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\movement.js",

@@ -1,0 +1,118 @@
+.taxi__container {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: absolute;
+    top: 500px;
+}
+
+.taxi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 655px;
+    height: 400px;
+    background-color: #474663;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px black;
+    color: #cecece;
+    overflow: hidden;
+    position: relative;
+    margin: 0 30px 30px 40px;
+}
+
+.taxi_content {
+    display: flex;
+    flex-direction: row;
+    max-height: 300px;
+}
+
+.taxi_ifo {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.taxi_img_cont {
+    display: flex;
+}
+
+.taxi_img {
+    width: 250px;
+    border-radius: 50%;
+    align-items: center;
+    margin: 50px 0 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+main .taxi_ifo h2 {
+    margin: 10px 0 0 15px;
+    font-size: 45px;
+    position: relative;
+    z-index: 2;
+}
+
+main .taxi_ifo p {
+    margin: 35px 0 0 10px;
+    font-size: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.taxi_social {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px 0 20px;
+}
+
+.social_img, .social_img_1 {
+    align-items: center;
+    margin: 30px 50px 0 20px;
+    width: 6%;
+    position: relative;
+    z-index: 2;
+    filter: invert(80%);
+}
+
+.pink {
+    height: 50px;
+    width: 50px;
+    background-color: #d7b4de;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.taxi:hover .pink {
+    transform: scale(20);
+}
+
+.taxi:hover .text {
+    color: rgb(35, 35, 35);
+}
+
+.taxi:hover .social_img_1 {
+    filter: invert(0%);
+}
+
+footer {
+    width: 100%;
+    height: 20%;
+    background-color: #643510;
+    position: absolute;
+    top: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px 25px 0 0;
+}
+
+    footer h2 {
+        margin: 10px;
+    }
