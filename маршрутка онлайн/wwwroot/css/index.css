@@ -1,15 +1,35 @@
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     border-radius: 25px;
     margin: 0 10px 5px 10px;
     height: 650px;
     width: 350px;
-    align-items: center;
     background-color: #474663;
     box-shadow:  3px 3px 5px black;
     color: #cecece;
+    overflow: hidden;
+    position: relative;
+}
+
+main h2, p
+{
+    position: relative;
+    z-index: 2;
+    color: #cecece;
+}
+
+main h2
+{
+    margin: 10px 0 0 10px;
+    font-size: 25px;
+}
+
+main p{
+    line-height: 50px;
+    margin: 0 0 0 10px;
+    
+    
 }
 
 .card__cover {
@@ -17,7 +37,12 @@
 }
 
 .card__content {
+    margin: 25px 0 0 0;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-height: 306px;
 }
 
 .card__container
@@ -30,19 +55,53 @@
 }
 .img_card
 {
-    width: 300px;
-    height: 250px;
-    border-radius: 25px;
+    width: 75%;
     position: relative;
-    top: 100px;
+   margin: 0 0 10px 0;
+    z-index: 2;
+    align-items: center;
 }
 
-main h2
+.card__content_img
 {
-    margin: 10px 0 0 25px;
-    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 273px;
 }
-main p
+
+.star
 {
-    margin: 0 0 100px 0;
+    width: 10%;
+    margin: 0 0 0 10px;
+    position: relative;
+    z-index: 2;
+    filter: invert(80%);
 }
+
+.pink
+{
+    height: 50px;
+    width: 50px;
+    background-color: #d7b4de;
+    z-index: 1;
+    position: absolute;
+    top: -30px;
+    left: -40px;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.card:hover .pink {
+    transform: scale(17);
+  }
+
+  .card:hover .text {
+    color: rgb(35, 35, 35);
+  }
+
+  .card:hover .star {
+    filter: invert(0%);
+  }
