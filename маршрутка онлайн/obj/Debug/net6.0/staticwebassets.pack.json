@@ -109,6 +109,22 @@
       "PackagePath": "staticwebassets\\img\\такси_такса.png"
     },
     {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\флаги\\беларусь.jpg",
+      "PackagePath": "staticwebassets\\img\\флаги\\беларусь.jpg"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\флаги\\молдова.webp",
+      "PackagePath": "staticwebassets\\img\\флаги\\молдова.webp"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\флаги\\россия.webp",
+      "PackagePath": "staticwebassets\\img\\флаги\\россия.webp"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\флаги\\румыния.webp",
+      "PackagePath": "staticwebassets\\img\\флаги\\румыния.webp"
+    },
+    {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\movement.js",
       "PackagePath": "staticwebassets\\js\\movement.js"
     },
