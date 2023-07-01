@@ -1,90 +1,50 @@
 ﻿@{
     ViewData["Title"] = "Иностранные Маршруты";
+    int i = 0;
 }
+@model List<card_taxi>
 
 <div class="taxi__container">
+    @foreach(var item in Model)
+    {
     <div class="taxi">
         <div class="taxi_content">
             <div class="taxi_ifo">
-                <h2 class="text">Молдова</h2>
+                <h2 class="text">@item.zag</h2>
                 <div class="pink"></div>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, at.</p>
-                <p class="text">+3735331517</p>
+                <p class="text">@item.text</p>
+                <p class="text">@item.num</p>
             </div>
             <div class="taxi_img_cont">
-                <img class="taxi_img" src="~/img/флаги/молдова.webp" alt="обложка">
+                    <img class="taxi_img" src="@Url.Content(item.img)" alt="обложка">
             </div>
         </div>
         <div class="flag_social">
-            <img class="social_img_1" src="~/img/сети/free-icon-instagram-1384089.png" alt="обложка">
-            <img class="social_img_1" src="~/img/сети/free-icon-social-48971.png" alt="обложка">
-            <img class="social_img_1" src="~/img/сети/free-icon-telegram-3800059.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-viber-1236868.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-whatsapp-1384023.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-vk-152813.png" alt="обложка">
+                @if (item.ins != "#")
+                {
+                    <img class="social_img_1" src="~/img/сети/free-icon-instagram-1384089.png" alt="обложка">
+                }
+                @if (item.ok != "#")
+                {
+                    <img class="social_img_1" src="~/img/сети/free-icon-social-48971.png" alt="обложка">
+                }
+                @if (item.tg != "#")
+                {
+                    <img class="social_img_1" src="~/img/сети/free-icon-telegram-3800059.png" alt="обложка">
+                }
+                @if (item.vb != "#")
+                {
+                    <img class="social_img" src="~/img/сети/free-icon-viber-1236868.png" alt="обложка">
+                }
+                @if (item.wa != "#")
+                {
+                    <img class="social_img" src="~/img/сети/free-icon-whatsapp-1384023.png" alt="обложка">
+                }
+                @if (item.vk != "#")
+                {
+                    <img class="social_img" src="~/img/сети/free-icon-vk-152813.png" alt="обложка">
+                }
         </div>
     </div>
-    <div class="taxi">
-        <div class="taxi_content">
-            <div class="taxi_ifo">
-                <h2 class="text">Россия</h2>
-                <div class="pink"></div>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, at.</p>
-                <p class="text">+3735331517</p>
-            </div>
-            <div class="taxi_img_cont">
-                <img class="taxi_img" src="~/img/флаги/россия.webp" alt="обложка">
-            </div>
-        </div>
-        <div class="flag_social">
-            <img class="social_img_1" src="~/img/сети/free-icon-instagram-1384089.png" alt="обложка">
-            <img class="social_img_1" src="~/img/сети/free-icon-social-48971.png" alt="обложка">
-            <img class="social_img_1" src="~/img/сети/free-icon-telegram-3800059.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-viber-1236868.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-whatsapp-1384023.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-vk-152813.png" alt="обложка">
-        </div>
-    </div>
-    <div class="taxi">
-        <div class="taxi_content">
-            <div class="taxi_ifo">
-                <h2 class="text">Румыния</h2>
-                <div class="pink"></div>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, at.</p>
-                <p class="text">+3735331517</p>
-            </div>
-            <div class="taxi_img_cont">
-                <img class="taxi_img" src="~/img/флаги/румыния.webp" alt="обложка">
-            </div>
-        </div>
-        <div class="flag_social">
-            <img class="social_img_1" src="~/img/сети/free-icon-instagram-1384089.png" alt="обложка">
-            <img class="social_img_1" src="~/img/сети/free-icon-social-48971.png" alt="обложка">
-            <img class="social_img_1" src="~/img/сети/free-icon-telegram-3800059.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-viber-1236868.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-whatsapp-1384023.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-vk-152813.png" alt="обложка">
-        </div>
-    </div>
-    <div class="taxi">
-        <div class="taxi_content">
-            <div class="taxi_ifo">
-                <h2 class="text">Беларусь</h2>
-                <div class="pink"></div>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, at.</p>
-                <p class="text">+3735331517</p>
-            </div>
-            <div class="taxi_img_cont">
-                <img class="taxi_img" src="~/img/флаги/беларусь.jpg" alt="обложка">
-            </div>
-        </div>
-        <div class="flag_social">
-            <img class="social_img_1" src="~/img/сети/free-icon-instagram-1384089.png" alt="обложка">
-            <img class="social_img_1" src="~/img/сети/free-icon-social-48971.png" alt="обложка">
-            <img class="social_img_1" src="~/img/сети/free-icon-telegram-3800059.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-viber-1236868.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-whatsapp-1384023.png" alt="обложка">
-            <img class="social_img" src="~/img/сети/free-icon-vk-152813.png" alt="обложка">
-        </div>
-    </div>
+    }
 </div>

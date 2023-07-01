@@ -26,14 +26,17 @@ namespace маршрутка_онлайн.Controllers
         public IActionResult Taxi()
         {
             List<card_taxi> card_ = new List<card_taxi>();
-            sql_taxi sql = new sql_taxi();
+            sql_taxi sql = new sql_taxi("card_taxi");
             sql.rider(card_);
             return View(card_);
         }
 
         public IActionResult foreign_taxi()
         {
-            return View();
+            List<card_taxi> card_ = new List<card_taxi>();
+            sql_taxi sql = new sql_taxi("card_foreign_taxi");
+            sql.rider(card_);
+            return View(card_);
         }
         
         public IActionResult cart()

@@ -4,6 +4,14 @@ namespace маршрутка_онлайн.Models.sql
 {
     public class sql_taxi
     {
+        public string name;
+
+        public sql_taxi(string name)
+        {
+            this.name = name;
+        }
+
+
         public string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
         public void rider(List<card_taxi> list)
         {
@@ -11,7 +19,7 @@ namespace маршрутка_онлайн.Models.sql
             {
                 connection.Open();
 
-                string selectQuery = "SELECT * FROM card_taxi";
+                string selectQuery = $"SELECT * FROM {name}";
                 using (SQLiteCommand selectCommand = new SQLiteCommand(selectQuery, connection))
                 {
                     using (SQLiteDataReader reader = selectCommand.ExecuteReader())
