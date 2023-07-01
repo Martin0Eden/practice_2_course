@@ -1,14 +1,11 @@
-﻿using System.Data;
-using System.Data.SQLite;
+﻿using System.Data.SQLite;
 
-namespace маршрутка_онлайн.Models
+namespace маршрутка_онлайн.Models.sql
 {
-    public class sql
+    public class sql_index
     {
-        string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
-        /*string connectionString = "Data Source=..\\..\\public_transport_city.sqlite";*/
-
-        public void vyvod(List<card_index>card_)
+        public string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+        public  void rider(List<card_index> list)
         {
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
@@ -24,12 +21,12 @@ namespace маршрутка_онлайн.Models
                             int i = 0;
                             while (reader.Read())
                             {
-                                card_.Add(new card_index());
-                                card_[i].zag = reader.GetString(0);
-                                card_[i].text1 = reader.GetString(1);
-                                card_[i].text2 = reader.GetString(2);
-                                card_[i].text3 = reader.GetString(3);
-                                card_[i].img= reader.GetString(4);
+                                list.Add(new card_index());
+                                list[i].zag = reader.GetString(0);
+                                list[i].text1 = reader.GetString(1);
+                                list[i].text2 = reader.GetString(2);
+                                list[i].text3 = reader.GetString(3);
+                                list[i].img = reader.GetString(4);
                                 i++;
                             }
                         }
@@ -38,9 +35,7 @@ namespace маршрутка_онлайн.Models
 
                 connection.Close();
             }
-
         }
     }
+
 }
-
-

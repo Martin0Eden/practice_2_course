@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using маршрутка_онлайн.Models;
+using маршрутка_онлайн.Models.sql;
 
 namespace маршрутка_онлайн.Controllers
 {
@@ -16,15 +17,18 @@ namespace маршрутка_онлайн.Controllers
         public IActionResult Index()
         {
             List< card_index> card_Index = new List<card_index>();
-            sql sql = new sql();
-            sql.vyvod(card_Index);
+            sql_index sql = new sql_index();
+            sql.rider(card_Index);
 
             return View(card_Index);
         }
 
         public IActionResult Taxi()
         {
-            return View();
+            List<card_taxi> card_ = new List<card_taxi>();
+            sql_taxi sql = new sql_taxi();
+            sql.rider(card_);
+            return View(card_);
         }
 
         public IActionResult foreign_taxi()
