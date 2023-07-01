@@ -1,23 +1,25 @@
-﻿@{
+﻿@model card_index
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="card__container">
     <div class="card">
         <div class="card__cover">
-            <h2 class="text">Такси</h2>
+            <h2 class="text">@Model.zag</h2>
             <div class="pink"></div>
         </div>
         <div class="card__content">
             <img class="star" src="~/img/звезда.png" alt="звезда">
-            <p class="text">Lorem ipsum dolor sit amet.</p>
+            <p class="text">@Model.text1</p>
             <img class="star" src="~/img/звезда.png" alt="звезда">
-            <p class="text">Lorem ipsum dolor sit amet.</p>
+            <p class="text">@Model.text2</p>
             <img class="star" src="~/img/звезда.png" alt="звезда"> 
-            <p class="text">Lorem ipsum dolor sit amet.</p>
+            <p class="text">@Model.text3</p>
         </div>
         <div class="card__content_img">
-            <img class="img_card" src="~/img/такси_карт.png" alt="памятник">
+            <img class="img_card" src="@Url.Content(Model.img)" alt="памятник">
         </div>
     </div>
     <div class="card">
