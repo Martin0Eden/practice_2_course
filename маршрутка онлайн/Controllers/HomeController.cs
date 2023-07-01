@@ -15,7 +15,9 @@ namespace маршрутка_онлайн.Controllers
 
         public IActionResult Index()
         {
-            card_index card_Index = new card_index("Такси", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet", "~/img/такси_карт.png");
+            card_index card_Index = new card_index();
+            sql sql = new sql();
+            sql.vyvod(card_Index);
 
             return View(card_Index);
         }
