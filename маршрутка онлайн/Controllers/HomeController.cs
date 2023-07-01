@@ -15,7 +15,7 @@ namespace маршрутка_онлайн.Controllers
 
         public IActionResult Index()
         {
-            card_index card_Index = new card_index();
+            List< card_index> card_Index = new List<card_index>();
             sql sql = new sql();
             sql.vyvod(card_Index);
 

@@ -1,28 +1,31 @@
-﻿@model card_index
+﻿@model List<card_index>
 
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="card__container">
+    @foreach(var item in Model)
+    {
     <div class="card">
         <div class="card__cover">
-            <h2 class="text">@Model.zag</h2>
+                <h2 class="text">@item.zag</h2>
             <div class="pink"></div>
         </div>
         <div class="card__content">
             <img class="star" src="~/img/звезда.png" alt="звезда">
-            <p class="text">@Model.text1</p>
+                <p class="text">@item.text1</p>
             <img class="star" src="~/img/звезда.png" alt="звезда">
-            <p class="text">@Model.text2</p>
+                <p class="text">@item.text2</p>
             <img class="star" src="~/img/звезда.png" alt="звезда"> 
-            <p class="text">@Model.text3</p>
+                <p class="text">@item.text3</p>
         </div>
         <div class="card__content_img">
-            <img class="img_card" src="@Url.Content(Model.img)" alt="памятник">
+                <img class="img_card" src="@Url.Content(item.img)" alt="памятник">
         </div>
     </div>
-    <div class="card">
+    }
+    @*<div class="card">
         <div class="card__cover">
             <h2 class="text">Маршрутное такси и тролейбусы</h2>
             <div class="pink"></div>
@@ -73,4 +76,4 @@
             <img class="img_card" src="~/img/билеты_карт.png" alt="памятник">
         </div>
     </div>
-</div>
+</div>*@
