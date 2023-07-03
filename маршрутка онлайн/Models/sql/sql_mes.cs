@@ -4,9 +4,16 @@ namespace маршрутка_онлайн.Models.sql
 {
     public class sql_mes
     {
-        public string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+        private readonly string connectionString;
 
-        public async Task add(message message)
+        public sql_mes(string connectionString)
+        {
+            this.connectionString = connectionString;
+        }
+
+
+
+        public async Task Add(message message)
         {
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {

@@ -1,0 +1,24 @@
+﻿@model message
+
+@{
+    ViewData["Title"] = "Обратная связь";
+}
+
+<div id="overlay_1">
+    <div id="form-container">
+        <form asp-action="Message" asp-controller="Home" method="post" class="form">
+            <h2>Отправить Сообщение</h2>
+            <label for="name">ФИО:</label>
+            <input asp-for="Name" type="text" >
+
+            <label for="email">E-mail:</label>
+            <input asp-for="E_mail" type="email">
+
+            <label for="message">Сообщение:</label>
+            <textarea type="text" asp-for="Mes"></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+        <a href="/Home/Index" id="close-form_1">Закрыть форму</a>
+    </div>
+</div>

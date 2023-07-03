@@ -44,18 +44,36 @@ namespace маршрутка_онлайн.Controllers
             return View();
         }
 
+        [HttpGet]
+
+        public IActionResult Message()
+        {
+            return View();
+        }
+
+        public IActionResult avtor()
+        {
+            return View();
+        }
+
         [HttpPost]
 
         public async Task<IActionResult> Message(message message)
         {
-            sql_mes sql_Mes = new sql_mes();
+            string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+
+            sql_mes sqlMes = new sql_mes(connectionString);
+
             if (ModelState.IsValid)
             {
-                await Task.Run(() => sql_Mes.add(message));
+                await sqlMes.Add(message);
+                /*Console.WriteLine($"{message.Name} {message.E_mail} {message.Mes}");*/
             }
 
-            return View();
+            return RedirectToAction("Index"); // Перенаправьте на другое действие или верните определенное представление
         }
+
+
 
 
 
