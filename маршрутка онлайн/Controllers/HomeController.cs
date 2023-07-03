@@ -44,10 +44,20 @@ namespace маршрутка_онлайн.Controllers
             return View();
         }
 
-        public IActionResult attractions()
+        [HttpPost]
+
+        public async Task<IActionResult> Message(message message)
         {
+            sql_mes sql_Mes = new sql_mes();
+            if (ModelState.IsValid)
+            {
+                await Task.Run(() => sql_Mes.add(message));
+            }
+
             return View();
         }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
