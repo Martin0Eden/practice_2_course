@@ -9,49 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = маршрутка_онлайн
 build_property.RootNamespace = маршрутка_онлайн
-build_property.ProjectDir = d:\ВУЗ\2 курс\2 семестр\практика\маршрутка онлайн\маршрутка онлайн\
+build_property.ProjectDir = D:\ВУЗ\2 курс\2 семестр\практика\маршрутка онлайн\маршрутка онлайн\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\ВУЗ\2 курс\2 семестр\практика\маршрутка онлайн\маршрутка онлайн
+build_property.MSBuildProjectDirectory = D:\ВУЗ\2 курс\2 семестр\практика\маршрутка онлайн\маршрутка онлайн
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/cart.cshtml]
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/Administration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbmlzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/avtor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhdnRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/foreign_taxi.cshtml]
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/foreign_taxi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmb3JlaWduX3RheGkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/Index.cshtml]
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/Message.cshtml]
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/Message.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZXNzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/Taxi.cshtml]
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/Taxi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUYXhpLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Shared/Error.cshtml]
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Shared/_Layout.cshtml]
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/_ViewImports.cshtml]
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/_ViewStart.cshtml]
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

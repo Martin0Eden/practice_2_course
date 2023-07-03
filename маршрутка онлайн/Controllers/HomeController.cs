@@ -44,12 +44,19 @@ namespace маршрутка_онлайн.Controllers
             return View();
         }
 
+        public IActionResult Administration()
+        {
+            return View();
+        }
+
+
         [HttpGet]
 
         public IActionResult Message()
         {
             return View();
         }
+        [HttpGet]
 
         public IActionResult avtor()
         {
@@ -67,10 +74,34 @@ namespace маршрутка_онлайн.Controllers
             if (ModelState.IsValid)
             {
                 await sqlMes.Add(message);
-                /*Console.WriteLine($"{message.Name} {message.E_mail} {message.Mes}");*/
             }
 
-            return RedirectToAction("Index"); // Перенаправьте на другое действие или верните определенное представление
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> avtor(admin ad)
+        {
+            string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+
+            sql_ad sqlad = new sql_ad(connectionString);
+            List<admin> admins = new List<admin>();
+            sqlad.rider(admins);
+
+            if (ModelState.IsValid)
+            {
+                foreach (var item in admins) 
+                { 
+                    if(item.log==ad.log&&item.pass==ad.pass)
+                        return RedirectToAction("Administration");
+                }
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
         }
 
 
