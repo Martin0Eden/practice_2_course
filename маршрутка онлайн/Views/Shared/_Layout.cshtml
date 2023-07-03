@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/taxi.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/foreign_taxi.css" asp-append-version="true" />
+    <script src="~/js/forms.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script>
 </head>
@@ -23,15 +24,54 @@
                 <a href="/Home/Taxi" class="menu_element">Такси</a>
             </div>
             <div class="menu_container">
-                <a href="/Home/attractions" class="menu_element">Маршрутное Такси</a>
+                <a href="/Home/cart" class="menu_element">Маршрутное Такси</a>
             </div>
             <div class="menu_container">
-                <a href="/Home/cart" class="menu_element">Онлайн-путеводитель</a>
+                <a href="/Home/attractions" class="menu_element">Онлайн-путеводитель</a>
             </div>
             <div class="menu_container">
                 <a href="/Home/foreign_taxi" class="menu_element">Иностранные маршруты</a>
             </div>
+            <div class="menu_container">
+                <a href="#" id="show-form_1" class="menu_element"><img class="img_menu" src="~/img/письмо.png" alt=""></a>
+            </div>
+            <div class="menu_container">
+                <a href="#" id="show-form_2" class="menu_element"><img class="img_menu" src="~/img/пользователь.png" alt=""></a>
+            </div>
         </ul>
+        <div id="overlay_1">
+            <div id="form-container">
+              <form class="form">
+                <h2>Отправить Сообщение</h2>
+                <label for="name">ФИО:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Отправить</button>
+              </form>
+              <a href="#" id="close-form_1">Закрыть форму</a>
+            </div>
+          </div>
+          <div id="overlay_2">
+            <div id="form-container">
+                <form class="form">
+                    <h2>Отправить Сообщение</h2>
+                    <label >Логин:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label >Пароль:</label>
+                    <input type="text" id="email" name="email" required>
+                    
+                    <button type="submit">Войти</button>
+                  </form>
+              <a href="#" id="close-form_2">Закрыть форму</a>
+            </div>
+          </div>
     </header>
     <main>
         @RenderBody()

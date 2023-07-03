@@ -65,6 +65,14 @@
       "PackagePath": "staticwebassets\\img\\памятник_карт.png"
     },
     {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\письмо.png",
+      "PackagePath": "staticwebassets\\img\\письмо.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\пользователь.png",
+      "PackagePath": "staticwebassets\\img\\пользователь.png"
+    },
+    {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\сети\\free-icon-instagram-1384089.png",
       "PackagePath": "staticwebassets\\img\\сети\\free-icon-instagram-1384089.png"
     },
@@ -123,6 +131,10 @@
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\флаги\\румыния.webp",
       "PackagePath": "staticwebassets\\img\\флаги\\румыния.webp"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\forms.js",
+      "PackagePath": "staticwebassets\\js\\forms.js"
     },
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\movement.js",

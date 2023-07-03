@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aI3++e6SVmwaIyRAB/B7UsVmsbZNDKs3LwVnWWm1+c0=",
+  "Hash": "v77V6XHBcC4Ra9EKfDWMjRX74AujIsmMQp+/QDQrbSI=",
   "Source": "маршрутка онлайн",
   "BasePath": "_content/маршрутка онлайн",
   "Mode": "Default",
@@ -289,6 +289,40 @@
       "OriginalItemSpec": "wwwroot\\img\\памятник_карт.png"
     },
     {
+      "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\письмо.png",
+      "SourceId": "маршрутка онлайн",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\",
+      "BasePath": "_content/маршрутка онлайн",
+      "RelativePath": "img/письмо.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\письмо.png"
+    },
+    {
+      "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\пользователь.png",
+      "SourceId": "маршрутка онлайн",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\",
+      "BasePath": "_content/маршрутка онлайн",
+      "RelativePath": "img/пользователь.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\пользователь.png"
+    },
+    {
       "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\сети\\free-icon-instagram-1384089.png",
       "SourceId": "маршрутка онлайн",
       "SourceType": "Discovered",
@@ -542,6 +576,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\флаги\\румыния.webp"
+    },
+    {
+      "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\forms.js",
+      "SourceId": "маршрутка онлайн",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\",
+      "BasePath": "_content/маршрутка онлайн",
+      "RelativePath": "js/forms.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\forms.js"
     },
     {
       "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\movement.js",
