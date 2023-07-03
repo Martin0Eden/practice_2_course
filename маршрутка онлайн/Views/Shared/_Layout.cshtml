@@ -37,13 +37,21 @@
             <div class="menu_container">
                 <a href="/Home/foreign_taxi" class="menu_element">Иностранные Маршруты</a>
             </div>
-           
+            @if (ViewData["Title"] != "Администратор")
+           {
             <div class="menu_container">
                 <a href="/Home/Message" class="menu_element"><img class="img_menu" src="~/img/письмо.png" alt=""></a>
             </div>
             <div class="menu_container">
                 <a href="/Home/avtor" class="menu_element"><img class="img_menu" src="~/img/пользователь.png" alt=""></a>
-            </div>
+                </div>
+            }
+            else
+            {
+                <div class="menu_container">
+                    <a href="/Home/Index" class="menu_element">Выход</a>
+                </div>
+            }
         </ul>
       
     </header>

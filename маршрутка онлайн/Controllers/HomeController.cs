@@ -56,6 +56,7 @@ namespace маршрутка_онлайн.Controllers
         {
             return View();
         }
+
         [HttpGet]
 
         public IActionResult avtor()
@@ -103,9 +104,6 @@ namespace маршрутка_онлайн.Controllers
                 return RedirectToAction("Index");
             }
         }
-
-
-
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
