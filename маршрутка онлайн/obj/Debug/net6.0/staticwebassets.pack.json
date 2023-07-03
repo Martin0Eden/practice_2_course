@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\css\\foreign_taxi.css",
       "PackagePath": "staticwebassets\\css\\foreign_taxi.css"
     },
@@ -47,6 +51,34 @@
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\автобус_карт.png",
       "PackagePath": "staticwebassets\\img\\автобус_карт.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\админка\\free-icon-bus-151693.png",
+      "PackagePath": "staticwebassets\\img\\админка\\free-icon-bus-151693.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\админка\\free-icon-taxi-5690327.png",
+      "PackagePath": "staticwebassets\\img\\админка\\free-icon-taxi-5690327.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\админка\\free-icon-ticket-flight-1454738.png",
+      "PackagePath": "staticwebassets\\img\\админка\\free-icon-ticket-flight-1454738.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\админка\\free-icon-to-do-list-4133971.png",
+      "PackagePath": "staticwebassets\\img\\админка\\free-icon-to-do-list-4133971.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\админка\\free-icon-warning-sign-2803344.png",
+      "PackagePath": "staticwebassets\\img\\админка\\free-icon-warning-sign-2803344.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\админка\\free-icon-wellington-monument-4145355.png",
+      "PackagePath": "staticwebassets\\img\\админка\\free-icon-wellington-monument-4145355.png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\админка\\письмо.png",
+      "PackagePath": "staticwebassets\\img\\админка\\письмо.png"
     },
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\билеты_карт.png",
