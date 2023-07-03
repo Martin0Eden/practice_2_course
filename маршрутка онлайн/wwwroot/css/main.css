@@ -71,8 +71,8 @@ a {
 
 /* чатик  */
 
-#overlay_1, #overlay_2 {
-    display: block;
+#overlay_in_taxi, #overlay_up_taxi, #overlay_del_taxi {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -80,7 +80,7 @@ a {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
-  }
+}
   
   #form-container {
     position: absolute;
@@ -96,18 +96,19 @@ a {
     margin-bottom: 10px;
     color: #cecece;
   }
-  
-  #close-form_1,#close-form_2 {
+
+#close-form_1, #close-form_2, #close-form_in_taxi, #close-form_up_taxi, #close-form_del_taxi {
     display: block;
     text-align: center;
     margin-top: 10px;
-  }
+}
   
   .form
   {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content:center;
     padding: 10px 0 10px 0;
   }
 

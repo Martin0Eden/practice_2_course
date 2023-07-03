@@ -44,9 +44,16 @@ namespace маршрутка_онлайн.Controllers
             return View();
         }
 
+        [HttpGet]
+
         public IActionResult Administration()
         {
-            return View();
+            card_index card_Index = new card_index();
+            card_taxi card_Taxi = new card_taxi();
+            message message = new message();
+
+            Combomodel combomodel = new Combomodel(card_Index, card_Taxi, message);
+            return View(combomodel);
         }
 
 
@@ -95,6 +102,31 @@ namespace маршрутка_онлайн.Controllers
                 foreach (var item in admins) 
                 { 
                     if(item.log==ad.log&&item.pass==ad.pass)
+                        return RedirectToAction("Administration");
+                }
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> Administration(admin ad)
+        {
+            string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+
+            sql_ad sqlad = new sql_ad(connectionString);
+            List<admin> admins = new List<admin>();
+            sqlad.rider(admins);
+
+            if (ModelState.IsValid)
+            {
+                foreach (var item in admins)
+                {
+                    if (item.log == ad.log && item.pass == ad.pass)
                         return RedirectToAction("Administration");
                 }
                 return RedirectToAction("Index");
