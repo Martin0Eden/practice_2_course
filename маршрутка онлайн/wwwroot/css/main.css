@@ -71,8 +71,7 @@ a {
 
 /* чатик  */
 
- #overlay_up_taxi{
-    display: none;
+ #overlay_in_taxi{
     position: fixed;
     top: 0;
     left: 0;

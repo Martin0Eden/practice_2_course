@@ -114,6 +114,27 @@ namespace маршрутка_онлайн.Controllers
             return View();
         }
 
+        [HttpGet]
+
+        public IActionResult in_main()
+        {
+            return View();
+        }
+
+        [HttpGet]
+
+        public IActionResult up_main()
+        {
+            return View();
+        }
+
+        [HttpGet]
+
+        public IActionResult del_main()
+        {
+            return View();
+        }
+
         [HttpPost]
 
         public async Task<IActionResult> Message(message message)
@@ -240,6 +261,47 @@ namespace маршрутка_онлайн.Controllers
             string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
 
             sql_taxi sqlMes = new sql_taxi(connectionString, "card_foreign_taxi");
+
+            if (!string.IsNullOrEmpty(taxi.zag))
+            {
+                await sqlMes.Delete(taxi);
+            }
+
+            return RedirectToAction("Administration");
+        }
+
+
+        public async Task<IActionResult> in_main(card_index taxi)
+        {
+            sql_index sqlMes = new sql_index();
+
+            if (ModelState.IsValid)
+            {
+                await sqlMes.Add(taxi);
+            }
+
+            return RedirectToAction("Administration");
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> up_main(card_index taxi)
+        {
+            sql_index sqlMes = new sql_index();
+
+            if (ModelState.IsValid)
+            {
+                await sqlMes.Update(taxi);
+            }
+
+            return RedirectToAction("Administration");
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> del_main(card_index taxi)
+        {
+            sql_index sqlMes = new sql_index();
 
             if (!string.IsNullOrEmpty(taxi.zag))
             {
