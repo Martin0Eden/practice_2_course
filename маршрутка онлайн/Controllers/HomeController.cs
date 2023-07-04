@@ -43,7 +43,11 @@ namespace маршрутка_онлайн.Controllers
         
         public IActionResult cart()
         {
-            return View();
+            List<cart> card_Index = new List<cart>();
+            sql_cart sql = new sql_cart();
+            sql.rider(card_Index);
+
+            return View(card_Index);
         }
 
         [HttpGet]

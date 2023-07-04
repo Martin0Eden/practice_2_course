@@ -137,3 +137,7 @@ a {
     height: 30px;
     margin: 10px 0 10px 0;
   }
+
+input {
+    text-align: center;
+}

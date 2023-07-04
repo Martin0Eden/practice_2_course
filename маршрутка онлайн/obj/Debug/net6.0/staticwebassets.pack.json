@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\css\\admin.css"
     },
     {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\css\\foreign_taxi.css",
       "PackagePath": "staticwebassets\\css\\foreign_taxi.css"
     },
@@ -27,6 +31,14 @@
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\fonts\\FontsFree-Net-Jeko-Extra-Bold.ttf",
       "PackagePath": "staticwebassets\\fonts\\FontsFree-Net-Jeko-Extra-Bold.ttf"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\ (1).png",
+      "PackagePath": "staticwebassets\\img\\ (1).png"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\ (2).png",
+      "PackagePath": "staticwebassets\\img\\ (2).png"
     },
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\1024473.jpg",
@@ -163,6 +175,10 @@
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\img\\флаги\\румыния.webp",
       "PackagePath": "staticwebassets\\img\\флаги\\румыния.webp"
+    },
+    {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\form.js",
+      "PackagePath": "staticwebassets\\js\\form.js"
     },
     {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\js\\forms.js",

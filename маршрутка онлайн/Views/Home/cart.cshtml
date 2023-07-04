@@ -1,3 +1,61 @@
-﻿@{
+﻿@model List<cart>
+
+@{
     ViewData["Title"] = "Маршрутное Такси";
 }
+
+
+<div class="cart_container">
+                @foreach(var item in Model )
+                {
+           <div class="cart_card">
+            <div style="display: flex; flex-direction: column;align-items: center;">
+                <h2>@item.name</h2>
+                @if (item.work == "true")
+                {
+                    <img class="img_cart" src="~/img/ (1).png" alt="">
+                }
+                else
+                {
+                    <img class="img_cart" src="~/img/ (2).png" alt="">
+                }
+            </div>
+            <div class="cart_content" style="display: flex; flex-direction: column;">
+                <div class="info">
+                    <div class="text">
+                        <h2>Цена</h2>
+                        <p>@item.price</p>
+                    </div>
+                    <div class="text">
+                        <h2>Время</h2>
+                        <p> @item.time_start - @item.time_end</p>
+                    </div>
+                    <div class="text">
+                        <h2>Интервал</h2>
+                        <p> @item.interval</p>
+                    </div>
+                </div>
+                <a href="#" class="show-form">
+                <div class="route">
+                        <div class="circle" style="background-color: @item.color;"><p>@item.point_start</p></div>
+                        <div class="circle" style="background-color: @item.color;"><p>@item.point_end</p></div>
+                        <div class="line" style="background-color: @item.color;"></div>
+                </div>
+            </a>
+            </div>
+        </div>
+        
+
+        
+<div class="overlay">
+    <div class="form-container">
+      <h2>@item.name</h2>
+      @foreach(var text in item.SplitAndRemoveSpaces(item.full_path))
+      {
+      <p>@text</p>
+      }
+      <a href="#" class="close-form">Закрыть</a>
+    </div>
+  </div>
+  }
+  </div>
