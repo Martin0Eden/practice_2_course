@@ -71,7 +71,7 @@ a {
 
 /* чатик  */
 
- #overlay_up_taxi, #overlay_del_taxi {
+ #overlay_up_taxi{
     display: none;
     position: fixed;
     top: 0;
@@ -97,7 +97,7 @@ a {
     color: #cecece;
   }
 
-#close-form_1, #close-form_2, #close-form_up_taxi, #close-form_del_taxi {
+#close-form_1, #close-form_2, #close-form_in_taxi, #close-form_del_taxi {
     display: block;
     text-align: center;
     margin-top: 10px;

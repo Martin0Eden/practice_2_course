@@ -1,4 +1,4 @@
-﻿@model Combomodel
+﻿
 
 @{
     ViewData["Title"] = "Администратор";
@@ -17,21 +17,7 @@
             <a href="#"><p class="text">Удалить</p></a>
         </div>
     </div>
-    @* <div id="overlay_2">
-        <div id="form-container">
-            <form asp-action="avtor" asp-controller="Home" method="post" class="form">
-                <h2>Добавить</h2>
-                <label>Логин:</label>
-                <input asp-for="log" type="text" required>
-
-                <label>Пароль:</label>
-                <input type="text" asp-for="pass" required>
-
-                <button type="submit">Войти</button>
-            </form>
-            <a href="/Home/Index" id="close-form_2">Закрыть форму</a>
-        </div>
-    </div> *@
+  
 
     <div class="card">
         <div class="card__cover">
@@ -40,69 +26,10 @@
         <div class="card__content">
             <h2>Такси</h2>
             <a href="/Home/in_taxi" ><p class="text">Добавить</p></a>
-            <a href="#" id="show-form_up_taxi"><p class="text">Изменить</p></a>
-            <a href="#" id="show-form_del_taxi"><p class="text">Удалить</p></a>
+            <a href="/Home/up_taxi"><p class="text">Изменить</p></a>
+            <a href="/Home/del_taxi"><p class="text">Удалить</p></a>
         </div>
     </div>
-
-   
-    
-          @*форма на изменение*@
-
-    <div id="overlay_up_taxi">
-        <div id="form-container">
-            <form class="form">
-                <h2>Изменить</h2>
-                <div style="display: flex; flex-direction: row;">
-                    <div style="display: flex; flex-direction: column;">
-                        <label for="name">Название:</label>
-                        <input type="text" required>
-
-                        <label>Заголовок:</label>
-                        <textarea type="text" required></textarea>
-
-                        <label>Номер телефона:</label>
-                        <input type="text" required>
-                    </div>
-                    <div style="display: flex; flex-direction: column;">
-                        <label for="name">Инстаграм:</label>
-                        <input type="text">
-                        <label for="name">Однокласники:</label>
-                        <input type="text">
-                        <label for="name">Vider:</label>
-                        <input type="text">
-                        <label for="name">Телеграм:</label>
-                        <input type="text">
-                        <label for="name">WhatsApp:</label>
-                        <input type="text">
-                        <label for="name">Vk:</label>
-                        <input type="text">
-                    </div>
-                </div>
-                <button type="submit">Отправить</button>
-            </form>
-            <a href="#" id="close-form_up_taxi">Закрыть форму</a>
-        </div>
-    </div>
-
-    @*форма на удаление*@
-    <div id="overlay_del_taxi">
-        <div id="form-container">
-            <form class="form">
-                <h2>Удалить</h2>
-                
-                  
-                        <label for="name">Название:</label>
-                        <input type="text" required>
-
-                <button type="submit">Отправить</button>
-            </form>
-            <a href="#" id="close-form_del_taxi">Закрыть форму</a>
-        </div>
-    </div>
-
-
-
 
     <div class="card">
         <div class="card__cover">
@@ -127,6 +54,7 @@
             <a href="vyb"><p class="text">Удалить</p></a>
         </div>
     </div>
+
     <div class="card">
         <div class="card__cover">
             <img class="img_card" src="~/img/админка/письмо.png" alt="памятник">

@@ -79,6 +79,20 @@ namespace маршрутка_онлайн.Controllers
             return View();
         }
 
+        [HttpGet]
+
+        public IActionResult up_taxi()
+        {
+            return View();
+        }
+
+        [HttpGet]
+
+        public IActionResult del_taxi()
+        {
+            return View();
+        }
+
         [HttpPost]
 
         public async Task<IActionResult> Message(message message)
@@ -133,6 +147,38 @@ namespace маршрутка_онлайн.Controllers
             {
                 await sqlMes.Add(taxi);
         }
+
+            return RedirectToAction("Administration");
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> up_taxi(card_taxi taxi)
+        {
+            string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+
+            sql_taxi sqlMes = new sql_taxi(connectionString);
+
+            if (ModelState.IsValid)
+            {
+                await sqlMes.Update(taxi);
+            }
+
+            return RedirectToAction("Administration");
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> del_taxi(card_taxi taxi)
+        {
+            string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+
+            sql_taxi sqlMes = new sql_taxi(connectionString);
+
+            /*if (ModelState.IsValid)
+            {*/
+                await sqlMes.Delete(taxi);
+            /*}*/
 
             return RedirectToAction("Administration");
         }

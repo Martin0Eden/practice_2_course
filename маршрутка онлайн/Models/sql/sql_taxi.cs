@@ -59,7 +59,7 @@ namespace маршрутка_онлайн.Models.sql
                     insertCommand.Parameters.AddWithValue("@header", message.zag);
                     insertCommand.Parameters.AddWithValue("@text", message.text);
                     insertCommand.Parameters.AddWithValue("@num", message.num);
-                    insertCommand.Parameters.AddWithValue("@img", message.img);
+                    insertCommand.Parameters.AddWithValue("@img", "~"+message.img);
                     insertCommand.Parameters.AddWithValue("@instagram", message.ins);
                     insertCommand.Parameters.AddWithValue("@ok", message.ok);
                     insertCommand.Parameters.AddWithValue("@telegram", message.tg);
@@ -68,6 +68,44 @@ namespace маршрутка_онлайн.Models.sql
                     insertCommand.Parameters.AddWithValue("@vk", message.vk);
                     await insertCommand.ExecuteNonQueryAsync();
                 }
+            }
+        }
+
+        public async Task Update(card_taxi message)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                await connection.OpenAsync();
+                string updateQuery = "UPDATE card_taxi SET text = @text, num = @num, img = @img, instagram = @instagram, ok = @ok, telegram = @telegram, viber = @viber, whatsapp = @whatsapp, vk = @vk WHERE header = @header";
+                using (SQLiteCommand updateCommand = new SQLiteCommand(updateQuery, connection))
+                {
+                    updateCommand.Parameters.AddWithValue("@header", message.zag);
+                    updateCommand.Parameters.AddWithValue("@text", message.text);
+                    updateCommand.Parameters.AddWithValue("@num", message.num);
+                    updateCommand.Parameters.AddWithValue("@img", "~" + message.img);
+                    updateCommand.Parameters.AddWithValue("@instagram", message.ins);
+                    updateCommand.Parameters.AddWithValue("@ok", message.ok);
+                    updateCommand.Parameters.AddWithValue("@telegram", message.tg);
+                    updateCommand.Parameters.AddWithValue("@viber", message.vb);
+                    updateCommand.Parameters.AddWithValue("@whatsapp", message.wa);
+                    updateCommand.Parameters.AddWithValue("@vk", message.vk);
+                    await updateCommand.ExecuteNonQueryAsync();
+                }
+            }
+        }
+        public async Task Delete(card_taxi message)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                await connection.OpenAsync();
+                string deleteQuery = "DELETE FROM card_taxi WHERE header = @header";
+                using (SQLiteCommand deleteCommand = new SQLiteCommand(deleteQuery, connection))
+                {
+                    deleteCommand.Parameters.AddWithValue("@header", message.zag);
+                    deleteCommand.ExecuteNonQuery();
+                    await deleteCommand.ExecuteNonQueryAsync();
+                }
+                
             }
         }
     }
