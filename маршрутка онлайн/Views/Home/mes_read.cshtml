@@ -1,0 +1,24 @@
+﻿@model List<message>
+
+@{
+    ViewData["Title"] = "Сообщения";
+}
+
+<div class="message_container">
+    @foreach(var item in Model)
+    {
+    <div class="message">
+        <h2>
+            @item.Name
+        </h2>
+        <h3>
+            @item.E_mail
+        </h3>
+        <p style="color: black;">
+           @item.Mes
+        </p>
+        <div class="line_message"></div>
+    </div>
+    }
+</div>
+

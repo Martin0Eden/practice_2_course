@@ -62,6 +62,15 @@ namespace маршрутка_онлайн.Controllers
             return View(combomodel);
         }
 
+        public IActionResult mes_read()
+        {
+            string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+
+            sql_mes sqlMes = new sql_mes(connectionString);
+            List<message> Mes = new List<message>();
+            sqlMes.rider(Mes);
+            return View(Mes);
+        }
 
         [HttpGet]
 

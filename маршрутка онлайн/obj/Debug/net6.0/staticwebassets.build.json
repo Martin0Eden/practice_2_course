@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Mgl3d4IYLdTJB6SnkDXhwT8Cjqn75N8Oy2ww85uF2Ns=",
+  "Hash": "OXOhfWfza0OWl7Vt+n+D65BNA7DQJkMb3hF+pr3pPBI=",
   "Source": "маршрутка онлайн",
   "BasePath": "_content/маршрутка онлайн",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\main.css"
+    },
+    {
+      "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\css\\mes.css",
+      "SourceId": "маршрутка онлайн",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\",
+      "BasePath": "_content/маршрутка онлайн",
+      "RelativePath": "css/mes.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\mes.css"
     },
     {
       "Identity": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\css\\taxi.css",

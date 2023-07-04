@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/cart.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/mes.css" asp-append-version="true" />
     @if (ViewData["Title"] != "Администратор")
     {
         <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
@@ -25,7 +26,10 @@
 </head>
 <body>
     <header>
-        <img class="main_cover" src="~/img/w_3.png" alt="">
+        @if (ViewData["Title"] != "Сообщения")
+        {
+            <img class="main_cover" src="~/img/w_3.png" alt="">
+        }
         <ul>
             <div class="menu_container">
                 <a href="/Home/Index" class="menu_element">Главная</a>
@@ -60,10 +64,13 @@
     <main>
         @RenderBody()
     </main>
+     @if (ViewData["Title"] != "Сообщения")
+        {
     <footer>
         <h2>Практическое задание</h2>
         <h3>Студента группы 21ПИ Гаврилова Дмитрия</h3>
     </footer>
+        }
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

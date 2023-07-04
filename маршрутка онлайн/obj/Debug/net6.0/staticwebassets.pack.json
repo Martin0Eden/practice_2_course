@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
+      "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\css\\mes.css",
+      "PackagePath": "staticwebassets\\css\\mes.css"
+    },
+    {
       "Id": "D:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\wwwroot\\css\\taxi.css",
       "PackagePath": "staticwebassets\\css\\taxi.css"
     },
