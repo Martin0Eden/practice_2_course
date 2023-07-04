@@ -27,15 +27,16 @@ namespace маршрутка_онлайн.Controllers
         {
             string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
             List<card_taxi> card_ = new List<card_taxi>();
-            sql_taxi sql = new sql_taxi(connectionString);
+            sql_taxi sql = new sql_taxi(connectionString, "card_taxi");
             sql.rider(card_);
             return View(card_);
         }
 
         public IActionResult foreign_taxi()
         {
+            string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
             List<card_taxi> card_ = new List<card_taxi>();
-            sql_taxi sql = new sql_taxi("card_foreign_taxi");
+            sql_taxi sql = new sql_taxi(connectionString, "card_foreign_taxi");
             sql.rider(card_);
             return View(card_);
         }
@@ -92,6 +93,26 @@ namespace маршрутка_онлайн.Controllers
         {
             return View();
         }
+        [HttpGet]
+
+        public IActionResult in_foreign_taxi()
+        {
+            return View();
+        }
+
+        [HttpGet]
+
+        public IActionResult up_foreign_taxi()
+        {
+            return View();
+        }
+
+        [HttpGet]
+
+        public IActionResult del_foreign_taxi()
+        {
+            return View();
+        }
 
         [HttpPost]
 
@@ -141,7 +162,7 @@ namespace маршрутка_онлайн.Controllers
         {
             string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
 
-            sql_taxi sqlMes = new sql_taxi(connectionString);
+            sql_taxi sqlMes = new sql_taxi(connectionString, "card_taxi");
 
             if (ModelState.IsValid)
             {
@@ -157,7 +178,7 @@ namespace маршрутка_онлайн.Controllers
         {
             string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
 
-            sql_taxi sqlMes = new sql_taxi(connectionString);
+            sql_taxi sqlMes = new sql_taxi(connectionString, "card_taxi");
 
             if (ModelState.IsValid)
             {
@@ -173,7 +194,52 @@ namespace маршрутка_онлайн.Controllers
         {
             string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
 
-            sql_taxi sqlMes = new sql_taxi(connectionString);
+            sql_taxi sqlMes = new sql_taxi(connectionString, "card_taxi");
+
+            if (!string.IsNullOrEmpty(taxi.zag))
+            {
+                await sqlMes.Delete(taxi);
+            }
+
+            return RedirectToAction("Administration");
+        }
+        public async Task<IActionResult> in_foreign_taxi(card_taxi taxi)
+        {
+            string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+
+            sql_taxi sqlMes = new sql_taxi(connectionString, "card_foreign_taxi");
+
+            if (ModelState.IsValid)
+            {
+                await sqlMes.Add(taxi);
+            }
+
+            return RedirectToAction("Administration");
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> up_foreign_taxi(card_taxi taxi)
+        {
+            string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+
+            sql_taxi sqlMes = new sql_taxi(connectionString, "card_foreign_taxi");
+
+            if (ModelState.IsValid)
+            {
+                await sqlMes.Update(taxi);
+            }
+
+            return RedirectToAction("Administration");
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> del_foreign_taxi(card_taxi taxi)
+        {
+            string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+
+            sql_taxi sqlMes = new sql_taxi(connectionString, "card_foreign_taxi");
 
             if (!string.IsNullOrEmpty(taxi.zag))
             {

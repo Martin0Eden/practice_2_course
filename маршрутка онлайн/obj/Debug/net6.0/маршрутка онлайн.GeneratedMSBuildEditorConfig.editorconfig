@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/del_foreign_taxi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkZWxfZm9yZWlnbl90YXhpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/del_taxi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkZWxfdGF4aS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/in_foreign_taxi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbl9mb3JlaWduX3RheGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/in_taxi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbl90YXhpLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/Taxi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUYXhpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/up_foreign_taxi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx1cF9mb3JlaWduX3RheGkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ВУЗ/2 курс/2 семестр/практика/маршрутка онлайн/маршрутка онлайн/Views/Home/up_taxi.cshtml]

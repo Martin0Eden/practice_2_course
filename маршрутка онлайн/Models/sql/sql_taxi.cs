@@ -4,10 +4,12 @@ namespace маршрутка_онлайн.Models.sql
 {
     public class sql_taxi
     {
+        public string table;
 
-        public sql_taxi(string name)
+        public sql_taxi(string connectionString,string table)
         {
-            this.connectionString = name;
+            this.connectionString = connectionString;
+            this.table = table;
         }
 
 
@@ -18,7 +20,7 @@ namespace маршрутка_онлайн.Models.sql
             {
                 connection.Open();
 
-                string selectQuery = $"SELECT * FROM card_taxi";
+                string selectQuery = $"SELECT * FROM {table}";
                 using (SQLiteCommand selectCommand = new SQLiteCommand(selectQuery, connection))
                 {
                     using (SQLiteDataReader reader = selectCommand.ExecuteReader())
@@ -53,7 +55,7 @@ namespace маршрутка_онлайн.Models.sql
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
                 await connection.OpenAsync();
-                string insertQuery = "INSERT INTO card_taxi (header, text, num, img, instagram, ok, telegram, viber, whatsapp, vk) VALUES (@header, @text, @num, @img, @instagram, @ok, @telegram, @viber, @whatsapp, @vk)";
+                string insertQuery = $"INSERT INTO {table} (header, text, num, img, instagram, ok, telegram, viber, whatsapp, vk) VALUES (@header, @text, @num, @img, @instagram, @ok, @telegram, @viber, @whatsapp, @vk)";
                 using (SQLiteCommand insertCommand = new SQLiteCommand(insertQuery, connection))
                 {
                     insertCommand.Parameters.AddWithValue("@header", message.zag);
@@ -76,7 +78,7 @@ namespace маршрутка_онлайн.Models.sql
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
                 await connection.OpenAsync();
-                string updateQuery = "UPDATE card_taxi SET text = @text, num = @num, img = @img, instagram = @instagram, ok = @ok, telegram = @telegram, viber = @viber, whatsapp = @whatsapp, vk = @vk WHERE header = @header";
+                string updateQuery = $"UPDATE {table}  SET text = @text, num = @num, img = @img, instagram = @instagram, ok = @ok, telegram = @telegram, viber = @viber, whatsapp = @whatsapp, vk = @vk WHERE header = @header";
                 using (SQLiteCommand updateCommand = new SQLiteCommand(updateQuery, connection))
                 {
                     updateCommand.Parameters.AddWithValue("@header", message.zag);
@@ -98,7 +100,7 @@ namespace маршрутка_онлайн.Models.sql
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
                 await connection.OpenAsync();
-                string deleteQuery = "DELETE FROM card_taxi WHERE header = @header";
+                string deleteQuery = $"DELETE FROM {table}  WHERE header = @header";
                 using (SQLiteCommand deleteCommand = new SQLiteCommand(deleteQuery, connection))
                 {
                     deleteCommand.Parameters.AddWithValue("@header", message.zag);
