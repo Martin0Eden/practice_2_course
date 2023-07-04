@@ -18389,6 +18389,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\Views\\Home\\del_cart.cshtml",
+      "TargetPath": "Views\\Home\\del_cart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\Views\\Home\\up_cart.cshtml",
+      "TargetPath": "Views\\Home\\up_cart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -18421,6 +18431,11 @@
     {
       "FilePath": "d:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\ВУЗ\\2 курс\\2 семестр\\практика\\маршрутка онлайн\\маршрутка онлайн\\Views\\Home\\in_cart.cshtml",
+      "TargetPath": "Views\\Home\\in_cart.cshtml",
       "FileKind": "mvc"
     },
     {

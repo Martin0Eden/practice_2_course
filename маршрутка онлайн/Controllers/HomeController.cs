@@ -139,6 +139,27 @@ namespace маршрутка_онлайн.Controllers
             return View();
         }
 
+        [HttpGet]
+
+        public IActionResult in_cart()
+        {
+            return View();
+        }
+
+        [HttpGet]
+
+        public IActionResult up_cart()
+        {
+            return View();
+        }
+
+        [HttpGet]
+
+        public IActionResult del_cart()
+        {
+            return View();
+        }
+
         [HttpPost]
 
         public async Task<IActionResult> Message(message message)
@@ -308,6 +329,46 @@ namespace маршрутка_онлайн.Controllers
             sql_index sqlMes = new sql_index();
 
             if (!string.IsNullOrEmpty(taxi.zag))
+            {
+                await sqlMes.Delete(taxi);
+            }
+
+            return RedirectToAction("Administration");
+        }
+
+        public async Task<IActionResult> in_cart(cart taxi)
+        {
+            sql_cart sqlMes = new sql_cart();
+
+            if (ModelState.IsValid)
+            {
+                await sqlMes.Add(taxi);
+            }
+
+            return RedirectToAction("Administration");
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> up_cart(cart taxi)
+        {
+            sql_cart sqlMes = new sql_cart();
+
+            if (ModelState.IsValid)
+            {
+                await sqlMes.Update(taxi);
+            }
+
+            return RedirectToAction("Administration");
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> del_cart(cart taxi)
+        {
+            sql_cart sqlMes = new sql_cart();
+
+            if (!string.IsNullOrEmpty(taxi.name))
             {
                 await sqlMes.Delete(taxi);
             }

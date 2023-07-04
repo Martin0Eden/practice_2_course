@@ -1,0 +1,45 @@
+﻿@model cart
+
+@{
+    ViewData["Title"] = "Добавление";
+}
+
+<div id="overlay_in_taxi">
+    <div id="form-container">
+        <form asp-action="in_cart" asp-controller="Home" method="post" class="form">
+            <h2>Добавить</h2>
+            <div style="display: flex; flex-direction: row;">
+                <div style="display: flex; flex-direction: column;">
+                    <label>Название:</label>
+                    <input asp-for="name" type="text" required>
+
+                    <label>Цена:</label>
+                    <input asp-for="price" type="text" required></input>
+
+                    <label>Время отправки:</label>
+                    <input asp-for="time_start" type="text" required>
+                    <label>Время прибытия:</label>
+                    <input asp-for="time_end" type="text">
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <label>Интервал:</label>
+                    <input asp-for="interval" type="text">
+                    <label>Начало пути:</label>
+                    <input asp-for="point_start" type="text">
+                    <label>Конец пути:</label>
+                    <input asp-for="point_end" type="text">
+                    <label>Маршрут:</label>
+                    <input asp-for="full_path" type="text">
+                    <label>Работоспособность:</label>
+                    <input asp-for="work" type="text">
+                    <label>Цвет:</label>
+                    <input asp-for="color" type="text">
+                </div>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+        <a href="/Home/Administration">Закрыть форму</a>
+    </div>
+</div>
+
+
