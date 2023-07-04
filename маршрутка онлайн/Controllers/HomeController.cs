@@ -175,10 +175,10 @@ namespace маршрутка_онлайн.Controllers
 
             sql_taxi sqlMes = new sql_taxi(connectionString);
 
-            /*if (ModelState.IsValid)
-            {*/
+            if (!string.IsNullOrEmpty(taxi.zag))
+            {
                 await sqlMes.Delete(taxi);
-            /*}*/
+            }
 
             return RedirectToAction("Administration");
         }
