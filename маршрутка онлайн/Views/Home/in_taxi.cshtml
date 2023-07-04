@@ -1,0 +1,45 @@
+﻿@model card_taxi
+
+@{
+    ViewData["Title"] = "Добавление";
+}
+
+<div id="overlay_in_taxi">
+    <div id="form-container">
+        <form asp-action="in_taxi" asp-controller="Home" method="post" class="form">
+            <h2>Добавить</h2>
+            <div style="display: flex; flex-direction: row;">
+                <div style="display: flex; flex-direction: column;">
+                    <label>Название:</label>
+                    <input asp-for="zag" type="text" required>
+
+                    <label>Заголовок:</label>
+                    <textarea asp-for="text" type="text" required></textarea>
+
+                    <label>Номер телефона:</label>
+                    <input asp-for="num" type="text" required>
+                    <label>Картинка:</label>
+                    <input asp-for="img" type="text">
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <label>Инстаграм:</label>
+                    <input asp-for="ins" type="text">
+                    <label>Однокласники:</label>
+                    <input asp-for="ok" type="text">
+                    <label>Vider:</label>
+                    <input asp-for="vb" type="text">
+                    <label>Телеграм:</label>
+                    <input asp-for="tg" type="text">
+                    <label>WhatsApp:</label>
+                    <input asp-for="wa" type="text">
+                    <label>Vk:</label>
+                    <input asp-for="vk" type="text">
+                </div>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+        <a href="#" id="close-form_in_taxi">Закрыть форму</a>
+    </div>
+</div>
+
+

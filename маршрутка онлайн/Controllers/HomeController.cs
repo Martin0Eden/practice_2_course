@@ -25,8 +25,9 @@ namespace маршрутка_онлайн.Controllers
 
         public IActionResult Taxi()
         {
+            string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
             List<card_taxi> card_ = new List<card_taxi>();
-            sql_taxi sql = new sql_taxi("card_taxi");
+            sql_taxi sql = new sql_taxi(connectionString);
             sql.rider(card_);
             return View(card_);
         }
@@ -67,6 +68,13 @@ namespace маршрутка_онлайн.Controllers
         [HttpGet]
 
         public IActionResult avtor()
+        {
+            return View();
+        }
+
+        [HttpGet]
+
+        public IActionResult in_taxi()
         {
             return View();
         }
@@ -114,29 +122,20 @@ namespace маршрутка_онлайн.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> Administration(admin ad)
+
+        public async Task<IActionResult> in_taxi(card_taxi taxi)
         {
             string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
 
-            sql_ad sqlad = new sql_ad(connectionString);
-            List<admin> admins = new List<admin>();
-            sqlad.rider(admins);
+            sql_taxi sqlMes = new sql_taxi(connectionString);
 
             if (ModelState.IsValid)
             {
-                foreach (var item in admins)
-                {
-                    if (item.log == ad.log && item.pass == ad.pass)
-                        return RedirectToAction("Administration");
-                }
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                return RedirectToAction("Index");
-            }
+                await sqlMes.Add(taxi);
         }
 
+            return RedirectToAction("Administration");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

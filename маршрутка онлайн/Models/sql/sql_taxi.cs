@@ -4,22 +4,21 @@ namespace маршрутка_онлайн.Models.sql
 {
     public class sql_taxi
     {
-        public string name;
 
         public sql_taxi(string name)
         {
-            this.name = name;
+            this.connectionString = name;
         }
 
 
-        public string connectionString = "Data Source=C:\\Users\\Administrator\\DataGripProjects\\бд\\public_transport_city.sqlite";
+        public string connectionString;
         public void rider(List<card_taxi> list)
         {
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
 
-                string selectQuery = $"SELECT * FROM {name}";
+                string selectQuery = $"SELECT * FROM card_taxi";
                 using (SQLiteCommand selectCommand = new SQLiteCommand(selectQuery, connection))
                 {
                     using (SQLiteDataReader reader = selectCommand.ExecuteReader())
@@ -47,6 +46,28 @@ namespace маршрутка_онлайн.Models.sql
                 }
 
                 connection.Close();
+            }
+        }
+        public async Task Add(card_taxi message)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+            {
+                await connection.OpenAsync();
+                string insertQuery = "INSERT INTO card_taxi (header, text, num, img, instagram, ok, telegram, viber, whatsapp, vk) VALUES (@header, @text, @num, @img, @instagram, @ok, @telegram, @viber, @whatsapp, @vk)";
+                using (SQLiteCommand insertCommand = new SQLiteCommand(insertQuery, connection))
+                {
+                    insertCommand.Parameters.AddWithValue("@header", message.zag);
+                    insertCommand.Parameters.AddWithValue("@text", message.text);
+                    insertCommand.Parameters.AddWithValue("@num", message.num);
+                    insertCommand.Parameters.AddWithValue("@img", message.img);
+                    insertCommand.Parameters.AddWithValue("@instagram", message.ins);
+                    insertCommand.Parameters.AddWithValue("@ok", message.ok);
+                    insertCommand.Parameters.AddWithValue("@telegram", message.tg);
+                    insertCommand.Parameters.AddWithValue("@viber", message.vb);
+                    insertCommand.Parameters.AddWithValue("@whatsapp", message.wa);
+                    insertCommand.Parameters.AddWithValue("@vk", message.vk);
+                    await insertCommand.ExecuteNonQueryAsync();
+                }
             }
         }
     }
